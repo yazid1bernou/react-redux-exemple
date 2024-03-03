@@ -6,9 +6,13 @@ import { useSelector } from "react-redux"
 const Name = () => {
 
     const auth =  useSelector (state => state.auth)
-    console.log(auth)
+    console.log(auth.Login)
     return (
-        <h1> My name is : yazid</h1>
+        <>
+          <h1> My name is : </h1> <span style={{display : !auth.Login ? "none" : ""}}> bernou yazid </span>
+          
+        </>
+      
     )
 }
 

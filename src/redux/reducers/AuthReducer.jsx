@@ -1,6 +1,6 @@
 
 const initialState =  {
-    Login : true 
+    Login : true
 }
 const AuthReducer =  (state =  initialState , action) => {
       switch(action.type) {
