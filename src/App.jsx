@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { useSelector } from 'react-redux'
+import Navbar from './components/Navbar'
 
 function App() {
     
-  const auth =  useSelector( state => state.auth)
-  console.log(auth);
+  
   return (
     <>
+       <Navbar />
        <button> Login</button>     
        <button>Logout</button> 
     </>
